@@ -9,14 +9,12 @@ public class pattern18 {
 		Scanner sc=new Scanner (System.in);
 		System.out.print("enter the count: ");
 		int n=sc.nextInt();
-		int num=n;
 		for(int i=n;i>=1;i--)
 		{
-			for(int j=n;j>=1;j--)
+			for(int j=i;j>=1;j--)
 			{
 				System.out.print("* ");
 			}
-			n--;
 			System.out.println();
 		}
 		sc.close();

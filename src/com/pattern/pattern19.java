@@ -13,12 +13,12 @@ public class pattern19 {
 			int num=1;
 			for(int i=n;i>=1;i--)
 			{
-				for(int j=n;j>=1;j--)
+				for(int j=i;j>=1;j--)
 				{
 					System.out.print(num+"\t");
 					num++;
 				}
-				n--;
+				
 				
 				System.out.println();
 			}
