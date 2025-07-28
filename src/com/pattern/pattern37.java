@@ -16,13 +16,13 @@ public class pattern37 {
 			int b=a;
 			for(int j=1;j<=space;j++)
 				System.out.print("  ");
-			for(int j=0;j<=i-1;j++) {
+			for(int j=1;j<=i;j++) {
 				System.out.print(b+" ");
 				b--;
 			}
 			for(int j=1;j<=i-1;j++)
 				System.out.print(j+" ");
-			a+=1;
+			a++;
 			space--;
 			
 			System.out.println();

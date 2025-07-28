@@ -27,7 +27,7 @@ public class pattern38 {
 				System.out.print(c+" ");
 				c++;
 			}
-			a+=1;
+			a++;
 			space--;
 			
 			System.out.println();

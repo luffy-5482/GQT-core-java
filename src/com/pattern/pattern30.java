@@ -38,20 +38,21 @@ public class pattern30 {
             System.out.print("  ");
             for(int j=1;j<=num;j++) {
             	if(j==1)
-            System.out.print(i+" ");
+            System.out.print(num+" ");
             	else {
 					System.out.print("  ");
 				}
             }
             for(int j=1;j<=num-1;j++) {
             	if(j==num-1)
-            System.out.print(i+" ");
+            System.out.print(num+" ");
             	else
             		System.out.print("  ");
             }
             num--;
             System.out.println();
         }
-	}
+		scanner.close();
+		}
 
 }

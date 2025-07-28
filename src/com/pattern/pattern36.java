@@ -16,7 +16,7 @@ public class pattern36 {
 			char b=a;
 			for(int j=1;j<=space;j++)
 				System.out.print("  ");
-			for(char j=1;j<=i;j++) {
+			for(int j=1;j<=i;j++) {
 				System.out.print(b+" ");
 				b--;
 			}

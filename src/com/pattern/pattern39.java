@@ -1,9 +1,6 @@
 package com.pattern;
-
 import java.util.Scanner;
-
 public class pattern39 {
-
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Scanner scanner=new Scanner(System.in);
@@ -28,7 +25,6 @@ public class pattern39 {
 				c++;
 			}
 			space--;
-			
 			System.out.println();
 		}
 		scanner.close();
