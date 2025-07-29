@@ -17,6 +17,7 @@ public class pattern20 {
 				System.out.print("@ ");
 			System.out.println();
 		}
+		sc.close();
 	}
 
 }
