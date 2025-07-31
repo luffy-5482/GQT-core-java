@@ -4,7 +4,6 @@ import java.util.Scanner;
 
 class movie{
 	Scanner scanner = new Scanner(System.in);
-
     String[] languages = {"Kannada", "Hindi", "Tamil"};
     int[][] revenue = new int[3][3];
     int[] totalPerMovie = new int[3];
@@ -37,7 +36,6 @@ class movie{
         }
 
         int profit = totalRevenue - totalInvestment;
-
         System.out.println("-------------------------------------------------------------");
         System.out.println("Total Investment: ₹" + totalInvestment + " Cr");
         System.out.println("Total Revenue: ₹" + totalRevenue + " Cr");
@@ -57,7 +55,7 @@ class movie{
         } else {
             System.out.println("  Same profit as last year.");
         }
-
+        
         System.out.println("-------------------------------------------------------------");
     }
 }
