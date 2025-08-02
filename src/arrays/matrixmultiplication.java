@@ -2,7 +2,7 @@ package arrays;
 
 import java.util.Scanner;
 
-class matrix{
+class mulmatrix{
 	int mat1[][]=new int[2][2];
 	int mat2[][]=new int[2][2];
 	int added[][]=new int[2][2];
@@ -25,17 +25,17 @@ class matrix{
 				}
 		}
 	}
-	void add() {
+	void mul() {
 		for(int i=0;i<2;i++)
 		{
 			for(int j=0;j<2;j++)
 			{
-				added[i][j]=mat1[i][j]+mat2[i][j];
+				added[i][j]=mat1[i][j]*mat2[i][j];
 			}
 		}
 	}
 	void display() {
-		System.out.println("the added matrix is :");
+		System.out.println("the multiplied matrix is :");
 		for(int i=0;i<2;i++)
 		{
 			System.out.println();
@@ -46,12 +46,12 @@ class matrix{
 		}
 	}
 }
-public class matrixaddition {
+public class matrixmultiplication {
 
 	public static void main(String[] args) {
-		matrix mat=new matrix();
+		mulmatrix mat=new mulmatrix();
 		mat.create();
-		mat.add();
+		mat.mul();
 		mat.display();
 	}
 
