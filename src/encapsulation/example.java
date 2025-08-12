@@ -47,9 +47,9 @@ public class example{
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
- int a=10,b=20,c=30;
+ int a=10,b=20;
  float m=10.33f,n=20.33f,o=30.33f;
- double p=100.333,q=200.333,r=300.333;
+ double p=100.333;
   
  Calculator c1=new Calculator();
  System.out.println(c1.add(a, b));
