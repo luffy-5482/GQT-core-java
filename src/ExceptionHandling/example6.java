@@ -1,7 +1,7 @@
 package ExceptionHandling;
 import java.util.Scanner;
 
-class Operations1{
+class Operations11{
 	void function1() throws Exception {
 		System.out.println("Inside function-2");
 			Scanner sc = new Scanner(System.in);
@@ -17,30 +17,36 @@ class Operations1{
 			sc.close();
 	}
 }
-class Operations2 {
+class Operations22 {
 	void function2() throws Exception {
 		System.out.println("Inside function-2");
-		Operations1 op1 = new Operations1();
+		Operations11 op1 = new Operations11();
 		op1.function1();
 		System.out.println("Outoff function-2");
 	}
 }
-class Operations3 {
-	void function3() {
+class Operations33 {
+	void function3() throws Exception{
 		System.out.println("Inside function-3");
-		Operations2 op2 = new Operations2();
+		Operations22 op2 = new Operations22();
 		try {
 		op2.function2();
 		} catch (Exception e) {
 		System.out.println("Outoff function-3");
-	}
+		throw e;
+	}  
 		System.out.println("Outoff function");
 }
-	public class example {
+	public class example6 {
 		public static void main(String[] args) {
 			System.out.println("Inside, main function");
-			Operations3 op3 = new Operations3();
-			op3.function3();
+			Operations33 op3 = new Operations33();
+			try {
+				op3.function3();
+			} catch (Exception e) {
+				// TODO Auto-generated catch block
+				System.out.println("Exception handled in the main function");
+			}
 			System.out.println("outoff main function");
 			
 		}

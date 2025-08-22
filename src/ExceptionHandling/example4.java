@@ -25,6 +25,7 @@ public class example4 {
 		int pos = sc.nextInt();// critical statement -- InputMismatchException
 		arr[pos] = val;
 		System.out.println("value added ");
+		sc.close();
     }
 		// specific multi-catch 
 		catch(ArithmeticException ae) {
